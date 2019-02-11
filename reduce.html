@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+            [65,14,22,5]
+    </p>
+    <button onclick="myFunction()">求和</button>
+    <div id="demo">
+
+    </div>
+    <script>
+        var numbers=[65,14,22,5];
+        function getSum(total,num){
+            return total+num;
+        }
+        function myFunction(item){
+            document.getElementById('demo').innerHTML=numbers.reduce(getSum);
+        }
+    </script>
+</body>
+</html>
